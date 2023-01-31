@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_model_models",
+  "info": {
+    "displayName": "Models"
+  },
+  "options": {},
+  "attributes": {
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Model_Name": {
+      "type": "string",
+      "required": true
+    },
+    "Warrenty": {
+      "type": "integer"
+    },
+    "Capacity": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
