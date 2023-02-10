@@ -12,11 +12,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Category_Name": {
+    "name": {
       "type": "string",
       "required": true
     },
-    "Slug": {
+    "slug": {
       "type": "string",
       "required": true,
       "unique": true
@@ -26,6 +26,19 @@
       "relation": "manyToOne",
       "target": "api::product.product",
       "inversedBy": "categories"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "unique": true
     }
   }
 }
